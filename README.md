@@ -1,0 +1,1 @@
+Hi! This my journey to become a Minecraft wizard in Python.
