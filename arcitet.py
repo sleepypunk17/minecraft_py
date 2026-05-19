@@ -8,12 +8,8 @@ async def ready(ctx):
     print("Python Bridge is Active! Move in game to trigger the build!")
 
 @app.game_event
-async def player_travelled(ctx):
-    for height in range(1,11):
-        await ctx.server.run(f"setblock ~{height} ~{height} ~10 diamond_block")
-
-        await asyncio.sleep(0.001)
-    
+async def block_broken(ctx):
+    await ctx.server.run("fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 glass")
 
 if __name__ == "__main__":
      app.start("localhost", 6666)
