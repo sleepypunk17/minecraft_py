@@ -16,3 +16,4 @@ async def player_travelled(ctx):
     
 
 if __name__ == "__main__":
+     app.start("localhost", 6666)
