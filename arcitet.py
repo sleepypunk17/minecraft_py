@@ -9,7 +9,7 @@ async def ready(ctx):
 
 @app.game_event
 async def block_broken(ctx):
-    await ctx.server.run("fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 glass")
+    await ctx.server.run("fill ~-2 ~-1 ~-2 ~2 ~-1 ~2 emerald_block")
 
 if __name__ == "__main__":
      app.start("localhost", 6666)
