@@ -30,4 +30,4 @@ async def block_broken(ctx):
         await ctx.server.run("effect @s slow_falling 10 255 true")
 
 if __name__ == "__main__":
-     app.start("localhost", 6666)
+     app.start("localhost", 3847)
