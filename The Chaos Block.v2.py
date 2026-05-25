@@ -10,7 +10,7 @@ async def ready(ctx):
 
 @app.game_event
 async def block_broken(ctx):
-    roll = random.randint(1,6)
+    roll = random.randint(1,4)
     if roll == 1:
         await ctx.server.run("fill ~ ~2 ~ ~ ~7 ~ diamond_block")
     elif roll == 2:
